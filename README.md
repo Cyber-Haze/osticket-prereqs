@@ -151,47 +151,65 @@ Next We want to Install the a few more of the prerequisites from the install fol
 </p>
 <p>  
 
+2. Rename: ost-config.php
+   - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+   - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+  
+3. Assign Permissions: ost-config.php
+   - Right click -> Properties -> Security -> Advance
+   - Disable inheritance -> Remove All.
+   - Add New Permissions -> Select a Principan -> Everyone -> All. (or whichever config matches your Organization needs)
+   - Apply -> Ok
 
 </p>
 <br />
 
+<h2>Complete installation by registering email and mySQL database.</h2>
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+1. Continue setting up osTicket in the browser (click Continue).
+2. Name Helpdesk.
+3. Default email (receives email from customers).
+4. link Data base:
+   - MySQL Database: osTicket.
+   - MySQL Username: root.
+   - MySQL Password: (**********).
+5. Click “Install Now!”.
+
+<p>
+<img width="449" height="339" alt="Screenshot 2025-09-01 230025" src="https://github.com/user-attachments/assets/9842d889-4c71-4048-bbb1-cad88fc310bd" />
+<img width="1568" height="586" alt="image" src="https://github.com/user-attachments/assets/778448cb-2708-48f0-ab5d-10321467f82a" />
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
+<h2>Confirm osTicket can be reached by users on LocalHost</h2>
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+1. Test link for agents and end-users:
+   - Admin/Agents URL: http://localhost/osTicket/scp/login.php
+   - End Users URL: http://localhost/osTicket/
+   
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img width="944" height="378" alt="image" src="https://github.com/user-attachments/assets/1b52cc9f-a80c-4344-996f-f3aadbfd78c6" />
+<img width="831" height="339" alt="image" src="https://github.com/user-attachments/assets/c60ec757-fc83-4229-b4ca-6ffd93988a29" />
+
 </p>
 <br />
 
+<h2>Clean up files that pose a security risk</h2>
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+1. Delete: C:\inetpub\wwwroot\osTicket\setup.
+2. Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php.
+
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
