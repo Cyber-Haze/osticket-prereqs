@@ -100,7 +100,7 @@ Next We want to Install the a few more of the prerequisites from the install fol
   
 </p>
 
-- Install HeidiSQL
+6. Install HeidiSQL
     - Create a new session (root user + Secret Password)
     - Connect to the session.
     - Create a database called "osTicket".
@@ -110,19 +110,48 @@ Next We want to Install the a few more of the prerequisites from the install fol
 
 <h2>Install osTicket and confirm it is a website running on this web server</h2>
 
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+1. Install osTicket
+     - Extract osTicket-v1.15.8.zip from installation file folder
+     - Within the Osticket folder, Copy the "upload" folder into  “c:\inetpub\wwwroot”
+     - Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+     - Reload IIS (Open IIS, Stop and Start the server)
+2. Confirm osTicket is running through web server:
+     -  Go to sites -> Default -> osTicket
+     -  On the right, click “Browse *:80”
+     -  Note some extensions arent active.
+
+<p>
+<img width="1040" height="332" alt="Screenshot 2025-09-01 222746" src="https://github.com/user-attachments/assets/13cb538d-3eeb-41f2-b2af-1ffa465e6d3c" />
+<img width="819" height="735" alt="image" src="https://github.com/user-attachments/assets/8a358362-1ca3-4c05-85be-d4f6b03853ca" />
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
+<h2>Enable Features and assign permissions to osTicket</h2>
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="754" height="383" alt="Screenshot 2025-09-01 223658" src="https://github.com/user-attachments/assets/f5e0fd64-58d5-4807-94a9-a2588046e390" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+1. Enable Extensions in PHP Manager:
+   - Enable: php_imap.dll
+   - Enable: php_intl.dll
+   - Enable: php_opcache.dll
+   - Refresh the osTicket site in your browser, observe the changes
+
+<p>
+<img width="820" height="732" alt="image" src="https://github.com/user-attachments/assets/191f1447-d015-486a-8550-23ca9ade8b10" />
+
+</p>
+<p>  
+
+
 </p>
 <br />
 
